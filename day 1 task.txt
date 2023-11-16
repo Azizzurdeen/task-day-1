@@ -1,0 +1,23 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2?
+  -The biggest difference is: HTTP/2 make multiple requests over one TCP connection while HTTP/1.1 allows only one request (even with request pipelining).
+  -The main difference is the fact that, with HTTP 2.0, a server can push resources to the client even without the client requesting them, just because it knows that the client will end up needing them.
+  -The contents of each stream are HTTP 1.1 requests and responses, just encoded and packed up differently.
+
+2. Write a blog about objects and its internal representation in Javascript?
+   JavaScript objects hold an important role. it can be easy to develop an understanding of them. One of the most common ways to understand objects is to think of it as you are re-creating a code. 
+   We will have two main concepts when we are dealing with objects. They will have properties and methods. Properties are the things that javascript objects have and the methods are the things that objects can perform. 
+   Let’s see that with some examples
+   
+   // let's define multiple objects to have a better understanding
+        const Train = {
+        numberOfCompartments: 12,  
+        Start: function(){return "Train starts..."},
+        Stop: function(){return "Train starts Stop..."} 
+        }
+       const car = {
+       brand: "Audi",
+       isElectric: true,
+       numberOfDoors: 4,
+       moveForward: function(){return "The car moves forward..."},
+       smartSummon: function(){return "The car starts driving itself to you..."}
+       }
